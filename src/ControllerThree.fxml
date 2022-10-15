@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerThree">
+   <children>
+      <Button fx:id="homepage" layoutX="29.0" layoutY="67.0" mnemonicParsing="false" onAction="#onClickHP" prefHeight="25.0" prefWidth="87.0" text="Home Page">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="players" layoutX="29.0" layoutY="154.0" mnemonicParsing="false" onAction="#onClickPlayers" prefHeight="25.0" prefWidth="87.0" text="Players">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="plann" layoutX="29.0" layoutY="233.0" mnemonicParsing="false" onAction="#onClickPlan" text="Plannification">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TableView fx:id="table" layoutX="136.0" layoutY="67.0" prefHeight="200.0" prefWidth="445.0">
+        <columns>
+          <TableColumn fx:id="match" prefWidth="75.0" text="IDmatch" />
+          <TableColumn fx:id="pOne" prefWidth="75.0" text="IDplayer1" />
+            <TableColumn fx:id="pTwo" prefWidth="75.0" text="IDplayer2" />
+            <TableColumn fx:id="court" prefWidth="75.0" text="IDcourt" />
+            <TableColumn fx:id="date" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="res" prefWidth="75.0" text="Results" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
