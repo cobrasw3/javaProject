@@ -11,16 +11,15 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class ControllerBis {
-
     @FXML
     private Button button;
 
     @FXML
-    private ImageView raquette;
+    private Label label;
 
     private Stage stage;
     private Scene scene;
